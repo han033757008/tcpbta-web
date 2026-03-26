@@ -11,15 +11,16 @@
         nav { background-color: #00447a; display: flex; justify-content: center; padding: 10px 0; }
         nav a { color: white; text-decoration: none; margin: 0 20px; font-weight: bold; font-size: 18px; }
         nav a:hover { color: #ffd700; }
-        .container { max-width: 1000px; margin: 30px auto; padding: 30px; background-color: white; box-shadow: 0 2px 10px rgba(0,0,0,0.1); border-radius: 8px; min-height: 50vh; }
+        .container { max-width: 1100px; margin: 30px auto; padding: 30px; background-color: white; box-shadow: 0 2px 10px rgba(0,0,0,0.1); border-radius: 8px; min-height: 50vh; }
         
-        /* 表格專屬設定 */
+        /* 表格專屬設定 (為多欄位進行優化) */
         h2 { border-bottom: 3px solid #005b9f; padding-bottom: 10px; color: #005b9f; margin-top: 0; }
-        table { width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 16px; }
-        th, td { border-bottom: 1px solid #ddd; padding: 15px 10px; text-align: center; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 15px; }
+        th, td { border-bottom: 1px solid #ddd; padding: 12px 8px; text-align: center; word-break: break-all; }
         th { background-color: #f4f4f4; color: #333; font-weight: bold; }
-        tr:hover { background-color: #f9f9f9; }
-        .web-link { color: #005b9f; text-decoration: none; font-weight: bold; padding: 5px 10px; border: 1px solid #005b9f; border-radius: 4px; background-color: #e6f2ff; transition: 0.3s; }
+        tr:hover { background-color: #e6f2ff; /* 滑鼠游標經過時變成淺藍色 */ }
+        .operator-name { font-weight: bold; color: #005b9f; }
+        .web-link { color: #005b9f; text-decoration: none; font-weight: bold; padding: 5px 10px; border: 1px solid #005b9f; border-radius: 4px; background-color: #f4f7f6; transition: 0.3s; display: inline-block; }
         .web-link:hover { background-color: #005b9f; color: white; }
         
         footer { text-align: center; padding: 20px; background-color: #333; color: white; margin-top: 40px; font-size: 14px; }
@@ -46,68 +47,104 @@
         <table>
             <thead>
                 <tr>
-                    <th width="20%">官方網站</th>
-                    <th width="40%">聯營公車業者</th>
-                    <th width="40%">聯絡電話 (可自行補充)</th>
+                    <th width="16%">聯營公車業者</th>
+                    <th width="24%">地址</th>
+                    <th width="15%">連絡電話</th>
+                    <th width="15%">服務專線</th>
+                    <th width="15%">服務時段</th>
+                    <th width="15%">官方網站</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td><a href="#" target="_blank" class="web-link">🔗 點此前往</a></td>
-                    <td>桃園汽車客運公司</td>
+                    <td class="operator-name">桃園汽車客運公司</td>
                     <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td><a href="#" target="_blank" class="web-link">🔗 前往</a></td>
                 </tr>
                 <tr>
-                    <td><a href="#" target="_blank" class="web-link">🔗 點此前往</a></td>
-                    <td>國光汽車客運公司</td>
+                    <td class="operator-name">國光汽車客運公司</td>
                     <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td><a href="#" target="_blank" class="web-link">🔗 前往</a></td>
                 </tr>
                 <tr>
-                    <td><a href="#" target="_blank" class="web-link">🔗 點此前往</a></td>
-                    <td>中壢汽車客運公司</td>
+                    <td class="operator-name">中壢汽車客運公司</td>
                     <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td><a href="#" target="_blank" class="web-link">🔗 前往</a></td>
                 </tr>
                 <tr>
-                    <td><a href="#" target="_blank" class="web-link">🔗 點此前往</a></td>
-                    <td>亞通汽車客運公司</td>
+                    <td class="operator-name">亞通汽車客運公司</td>
                     <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td><a href="#" target="_blank" class="web-link">🔗 前往</a></td>
                 </tr>
                 <tr>
-                    <td><a href="#" target="_blank" class="web-link">🔗 點此前往</a></td>
-                    <td>統聯汽車客運公司</td>
+                    <td class="operator-name">統聯汽車客運公司</td>
                     <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td><a href="#" target="_blank" class="web-link">🔗 前往</a></td>
                 </tr>
                 <tr>
-                    <td><a href="#" target="_blank" class="web-link">🔗 點此前往</a></td>
-                    <td>三重汽車客運公司</td>
+                    <td class="operator-name">三重汽車客運公司</td>
                     <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td><a href="#" target="_blank" class="web-link">🔗 前往</a></td>
                 </tr>
                 <tr>
-                    <td><a href="#" target="_blank" class="web-link">🔗 點此前往</a></td>
-                    <td>臺北汽車客運公司</td>
+                    <td class="operator-name">臺北汽車客運公司</td>
                     <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td><a href="#" target="_blank" class="web-link">🔗 前往</a></td>
                 </tr>
                 <tr>
-                    <td><a href="#" target="_blank" class="web-link">🔗 點此前往</a></td>
-                    <td>指南汽車客運公司</td>
+                    <td class="operator-name">指南汽車客運公司</td>
                     <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td><a href="#" target="_blank" class="web-link">🔗 前往</a></td>
                 </tr>
                 <tr>
-                    <td><a href="#" target="_blank" class="web-link">🔗 點此前往</a></td>
-                    <td>金台通運企業有限公司</td>
+                    <td class="operator-name">金台通運企業有限公司</td>
                     <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td><a href="#" target="_blank" class="web-link">🔗 前往</a></td>
                 </tr>
                 <tr>
-                    <td><a href="#" target="_blank" class="web-link">🔗 點此前往</a></td>
-                    <td>台灣真好小客車租賃公司</td>
+                    <td class="operator-name">台灣真好小客車租賃公司</td>
                     <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td><a href="#" target="_blank" class="web-link">🔗 前往</a></td>
                 </tr>
                 <tr>
-                    <td><a href="#" target="_blank" class="web-link">🔗 點此前往</a></td>
-                    <td>捷乘客運有限公司</td>
+                    <td class="operator-name">捷乘客運有限公司</td>
                     <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td><a href="#" target="_blank" class="web-link">🔗 前往</a></td>
                 </tr>
-            </tbody>
+                </tbody>
         </table>
     </div>
 

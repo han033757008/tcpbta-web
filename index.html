@@ -96,6 +96,59 @@
             margin-top: 40px;
             font-size: 14px;
         }
+        .section-title {
+            border-bottom: 2px solid #005b9f;
+            padding-bottom: 10px;
+            color: #005b9f;
+            font-size: 22px;
+            margin-bottom: 15px;
+            font-weight: bold;
+            text-align: left;
+        }
+        .card-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .card {
+            width: 48%;
+            min-width: 280px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+            margin-bottom: 20px;
+            transition: transform 0.2s;
+            text-decoration: none;
+            color: #333;
+            display: block;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background-color: #e6f2ff;
+        }
+        .card-content {
+            padding: 15px;
+            text-align: left;
+        }
+        .card-title {
+            font-size: 18px;
+            color: #333;
+            margin: 0 0 8px 0;
+            font-weight: bold;
+        }
+        .card-desc {
+            font-size: 14px;
+            color: #666;
+            margin: 0;
+            line-height: 1.6;
+        }
     </style>
 </head>
 <body>
@@ -118,6 +171,45 @@
         <p>本公會致力於提升桃園市公共汽車客運服務品質，保障同業合法權益，並配合政府交通政策，推動在地運輸發展與永續經營。</p>
         <p>👉 請點擊上方選單，了解更多關於「公會」與「聯營管理委員會」的詳細介紹。</p>
 
+<hr style="border: 0; border-top: 1px solid #ddd; margin: 40px 0 30px 0;">
+
+        <div style="text-align: left; margin-bottom: 40px;">
+            <div class="section-title">📢 最新消息</div>
+            <div class="news-item">
+                <span class="news-date">2026/03/24</span>
+                <a href="news.html" class="news-title">桃園市公車聯營管理委員會正式成立網站上線</a>
+            </div>
+            <div class="news-item">
+                <span class="news-date">2026/03/24</span>
+                <a href="news.html" class="news-title">桃園市區公車四國語音播報系統建置進度更新</a>
+            </div>
+            <div style="text-align: right; margin-top: 15px;">
+                <a href="news.html" style="color: #005b9f; text-decoration: none; font-weight: bold;">➡️ 點此查看更多消息</a>
+            </div>
+        </div>
+
+        <div style="text-align: left;">
+            <div class="section-title">🚌 乘車資訊查詢</div>
+            <div class="card-container">
+                
+                <a href="https://ebus.tycg.gov.tw/ebus/" target="_blank" class="card">
+                    <img src="citybus.jpg" alt="桃園市公車動態" class="card-img" onerror="this.src='https://via.placeholder.com/500x250/e6f2ff/005b9f?text=請上傳市區公車圖片'">
+                    <div class="card-content">
+                        <h4 class="card-title">桃園市公車動態系統</h4>
+                        <p class="card-desc">發布機關：桃園市政府交通局<br>點擊前往查詢桃園市區公車即時到站時間、路線圖與票價資訊。</p>
+                    </div>
+                </a>
+
+                <a href="https://www.taiwanbus.tw/eBUSPage/Default.aspx?lan=C" target="_blank" class="card">
+                    <img src="highwaybus.jpg" alt="公路客運即時動態" class="card-img" onerror="this.src='https://via.placeholder.com/500x250/e6f2ff/005b9f?text=請上傳公路客運圖片'">
+                    <div class="card-content">
+                        <h4 class="card-title">公路客運即時動態</h4>
+                        <p class="card-desc">發布機關：交通部公路局<br>點擊前往查詢國道及一般公路客運即時資訊。</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
     </div>
 
     <footer id="contact">
